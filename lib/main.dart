@@ -56,8 +56,8 @@ class _MyAppState extends State<MyApp> {
 
     return MultiProvider(
       providers: [
-        BlocProvider(create: (_) => JuzCubit()),
         BlocProvider(create: (_) => ChapterCubit()),
+        BlocProvider(create: (_) => JuzCubit()),
         BlocProvider(create: (_) => BookmarkCubit()),
         ChangeNotifierProvider(create: (_) => AppProvider()),
         ChangeNotifierProvider(create: (_) => OnBoardingProvider()),
